@@ -24,6 +24,7 @@
         android:background="@color/player_one_color">
 
         <Button
+            android:id="@+id/bt_add_player_one"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -56,6 +57,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/bt_remove_player_one"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
