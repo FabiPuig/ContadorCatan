@@ -85,9 +85,13 @@ public class MainActivity extends AppCompatActivity {
     private void resetScores(){
 
         scoreOne = 0;
+        tvScoreOne.setText( String.valueOf( scoreOne ) );
         scoreTwo = 0;
+        tvScoreTwo.setText( String.valueOf( scoreTwo ) );
         scoreThree= 0;
+        tvScoreThree.setText( String.valueOf( scoreThree ) );
         scoreFour = 0;
+        tvScoreFour.setText( String.valueOf( scoreFour ) );
 
     }
 }
