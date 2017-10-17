@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
         resetScores();
         playerOneControl();
+        playerTwoControl();
+        playerThreeControl();
+        playerFourControl();
 
     }
 
@@ -111,6 +114,63 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 scoreOne--;
                 tvScoreOne.setText( String.valueOf( scoreOne ) );
+            }
+        });
+    }
+
+    private void playerTwoControl(){
+
+        btAddTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreTwo++;
+                tvScoreTwo.setText( String.valueOf( scoreTwo ) );
+            }
+        });
+
+        btRemoveTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreTwo--;
+                tvScoreTwo.setText( String.valueOf( scoreTwo ) );
+            }
+        });
+    }
+
+    private void playerThreeControl(){
+
+        btAddThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreThree++;
+                tvScoreThree.setText( String.valueOf( scoreThree ) );
+            }
+        });
+
+        btRemoveThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreThree--;
+                tvScoreThree.setText( String.valueOf( scoreThree ) );
+            }
+        });
+    }
+
+    private void playerFourControl(){
+
+        btAddFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreFour++;
+                tvScoreFour.setText( String.valueOf( scoreFour ) );
+            }
+        });
+
+        btRemoveFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreFour--;
+                tvScoreFour.setText( String.valueOf( scoreFour ) );
             }
         });
     }
