@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvScoreThree;
     private TextView tvScoreFour;
 
+    private int scoreOne;
+    private int scoreTwo;
+    private int scoreThree;
+    private int scoreFour;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         tvScoreTwo = (TextView) findViewById( R.id.tv_score_two );
         tvScoreThree = (TextView) findViewById( R.id.tv_score_three );
         tvScoreFour = (TextView) findViewById( R.id.tv_score_four );
+
+        resetScores();
 
     }
 
@@ -70,5 +77,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Metodo para poner las puntuaciones a 0
+     *
+     */
+    private void resetScores(){
+
+        scoreOne = 0;
+        scoreTwo = 0;
+        scoreThree= 0;
+        scoreFour = 0;
+
     }
 }
