@@ -8,8 +8,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button btAddOne;
+    private Button btRemoveOne;
+    private Button btAddTwo;
+    private Button btRemoveTwo;
+    private Button btAddThree;
+    private Button btRemoveThree;
+    private Button btAddFour;
+    private Button btRemoveFour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        btAddOne = (Button) findViewById( R.id.bt_add_player_one );
+        btRemoveOne =(Button) findViewById( R.id.bt_remove_player_one );
+        btAddTwo = (Button) findViewById( R.id.bt_add_player_two );
+        btRemoveTwo = (Button) findViewById( R.id.bt_remove_player_two );
+        btAddThree = (Button) findViewById( R.id.bt_add_player_three );
+        btRemoveThree = (Button) findViewById( R.id.bt_remove_player_three );
+        btAddFour = (Button) findViewById( R.id.bt_add_player_four );
+        btRemoveFour = (Button) findViewById( R.id.bt_remove_player_four );
 
     }
 
