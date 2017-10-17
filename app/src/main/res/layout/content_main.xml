@@ -39,13 +39,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/player_one"/>
+                android:text="@string/player_one"
+                android:gravity="center"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/initial_score"/>
+                android:text="@string/initial_score"
+                android:gravity="center"/>
 
 
         </LinearLayout>
