@@ -8,6 +8,8 @@
 
     <string name="player_one">JUGADOR 1</string>
     <string name="player_two">JUGADOR 2</string>
+    <string name="player_three">JUGADOR 3</string>
+    <string name="player_four">JUGADOR 4</string>
 
 
     <string name="initial_score">0</string>
