@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         tvScoreFour = (TextView) findViewById( R.id.tv_score_four );
 
         resetScores();
+        playerOneControl();
 
     }
 
@@ -93,5 +94,24 @@ public class MainActivity extends AppCompatActivity {
         scoreFour = 0;
         tvScoreFour.setText( String.valueOf( scoreFour ) );
 
+    }
+
+    private void playerOneControl(){
+
+        btAddOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreOne++;
+                tvScoreOne.setText( String.valueOf( scoreOne ) );
+            }
+        });
+
+        btRemoveOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreOne--;
+                tvScoreOne.setText( String.valueOf( scoreOne ) );
+            }
+        });
     }
 }
