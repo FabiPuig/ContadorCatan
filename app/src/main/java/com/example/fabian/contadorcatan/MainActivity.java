@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private Button btRemoveThree;
     private Button btAddFour;
     private Button btRemoveFour;
+
+    private TextView tvScoreOne;
+    private TextView tvScoreTwo;
+    private TextView tvScoreThree;
+    private TextView tvScoreFour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
         btRemoveThree = (Button) findViewById( R.id.bt_remove_player_three );
         btAddFour = (Button) findViewById( R.id.bt_add_player_four );
         btRemoveFour = (Button) findViewById( R.id.bt_remove_player_four );
+
+        tvScoreOne = (TextView) findViewById( R.id.tv_score_one );
+        tvScoreTwo = (TextView) findViewById( R.id.tv_score_two );
+        tvScoreThree = (TextView) findViewById( R.id.tv_score_three );
+        tvScoreFour = (TextView) findViewById( R.id.tv_score_four );
 
     }
 
