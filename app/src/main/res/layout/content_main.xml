@@ -27,7 +27,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:text="@string/button_add"/>
+            android:text="@string/button_add"
+            android:textSize="@dimen/button_text"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -57,7 +58,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:text="@string/button_remove"/>
+            android:text="@string/button_remove"
+            android:textSize="@dimen/button_text"/>
 
     </LinearLayout>
 
