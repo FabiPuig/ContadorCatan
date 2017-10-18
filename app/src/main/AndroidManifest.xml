@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".WinActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/NoToolbarTheme"></activity>
     </application>
 
 </manifest>
