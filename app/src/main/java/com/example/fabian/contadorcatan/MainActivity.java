@@ -1,5 +1,6 @@
 package com.example.fabian.contadorcatan;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -189,23 +190,18 @@ public class MainActivity extends AppCompatActivity {
 
         // si la puntuacion del jugador es 10
         if( score == 10 ){
-            String jugador = "";
-            // comprueba que jugador es y guarda el nombre correspondiente en una variable
-            switch ( player ){
-                case 1 : jugador = getString( R.string.player_one );
-                    break;
-                case 2 : jugador = getString( R.string.player_two );
-                    break;
-                case 3 : jugador = getString( R.string.player_three );
-                    break;
-                case 4 : jugador = getString( R.string.player_four );
-                    break;
-                default:
-                    break;
-            }
 
-            // Muestra un mensaje indicando el ganador
-            Toast.makeText( this, "El ganador es el " + jugador, Toast.LENGTH_LONG).show();
+            // Intent para llamar el activity con el ganador
+            Intent intent = new Intent( MainActivity.this, WinActivity.class );
+            // bundle para guardar los datos
+            Bundle b = new Bundle();
+            // guardamos en el campoo saved_winner el valor de player
+            b.putInt( getString( R.string.saved_winner ), player );
+            // añadimos el bundle al intent
+            intent.putExtras( b );
+            // iniciamos el activity indicado por el intent
+            startActivity( intent );
+
         }
     }
 }

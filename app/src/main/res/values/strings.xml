@@ -13,4 +13,6 @@
 
 
     <string name="initial_score">0</string>
+
+    <string name="saved_winner">saved_winner</string>
 </resources>
