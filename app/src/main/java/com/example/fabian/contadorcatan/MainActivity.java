@@ -174,4 +174,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    /** Comprueba el marcador de los jugadores para ver si hay un ganador
+     *
+     * @param player Número del jugador
+     * @param score puntuacion del jugador
+     */
+    private void checkWin( int player, int score ){
+
+        // si la puntuacion del jugador es 10
+        if( score == 10 ){
+            String jugador = "";
+            // comprueba que jugador es y guarda el nombre correspondiente en una variable
+            switch ( player ){
+                case 1 : jugador = getString( R.string.player_one );
+                    break;
+                case 2 : jugador = getString( R.string.player_two );
+                    break;
+                case 3 : jugador = getString( R.string.player_three );
+                    break;
+                case 4 : jugador = getString( R.string.player_four );
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 }
