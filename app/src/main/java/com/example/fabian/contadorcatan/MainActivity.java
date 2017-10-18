@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -106,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 scoreOne++;
                 tvScoreOne.setText( String.valueOf( scoreOne ) );
+                checkWin( 1, scoreOne );
             }
         });
 
@@ -125,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 scoreTwo++;
                 tvScoreTwo.setText( String.valueOf( scoreTwo ) );
+                checkWin( 2, scoreTwo );
             }
         });
 
@@ -144,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 scoreThree++;
                 tvScoreThree.setText( String.valueOf( scoreThree ) );
+                checkWin( 3, scoreThree );
             }
         });
 
@@ -163,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 scoreFour++;
                 tvScoreFour.setText( String.valueOf( scoreFour ) );
+                checkWin( 4, scoreFour );
             }
         });
 
@@ -198,6 +203,9 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     break;
             }
+
+            // Muestra un mensaje indicando el ganador
+            Toast.makeText( this, "El ganador es el " + jugador, Toast.LENGTH_LONG).show();
         }
     }
 }
